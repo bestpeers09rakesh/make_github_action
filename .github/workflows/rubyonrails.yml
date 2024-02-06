@@ -53,6 +53,7 @@ jobs:
           export POSTGRES_USER="postgres"
           export POSTGRES_PASSWORD="postgres"
           export POSTGRES_DB="realyou_test"
+          export GEM_HOME=$HOME/.gem
           $GEM_HOME/bin/bundle exec rails db:create RAILS_ENV=test
           $GEM_HOME/bin/bundle exec rails db:migrate RAILS_ENV=test
 
